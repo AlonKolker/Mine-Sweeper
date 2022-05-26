@@ -4,22 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Mine-Sweppers Alon kolker</title>
+    <title>Mine-Sweppers - Alon kolker</title>
     <link rel="stylesheet" href="css/mineSwipper.css" />
   </head>
 
   <body onload="init()">
+    <div class="main">
+      <div class="left-side">
 
-<div class="header">
-    <h1>Mine-Swepper  Alon kolker</h1>
-</div>
-    <div  class="board-container"></div>
+      <div class="center">
+        <div class="header">
+          <h1>Mine Swepper Alon kolker</h1>
+          <h2>Alon kolker</h2>
+          <button class="restart" onclick="restart()">
+            😛 <br />
+            Restart
+          </button>
+          <br />
+          <button class="board-size" onclick="changeSize(16)">
+            Rookies: 16
+          </button>
+          <button class="board-size" onclick="changeSize(36)">
+            Professional: 36
+          </button>
+          <button class="board-size" onclick="changeSize(64)">
+            Expert: 64
+          </button>
 
+          <p class="timer">Timer: 0:0.0</p>
+          <p class="Is-show">Revealed: 0</p>
+          <p class="is-Marked">Flags: 0</p>
+        </div>
+        <div class="board-container">
+          <table>
+            <tbody class="board"></tbody>
+          </table>
+        </div>
+        <div  class="popup">👀Game Over👀</div>
+        <p class="createdBy">Coffie rights - Alon Kolker Ⓒ</p>
+      </div>
+      <div class="right-side">
+        <div class="lives">
+          <p style="font-size: xx-large">lives:</p>
+          <div class="live1"><i class="fa-solid fa-briefcase-medical"></i></div>
+          <div class="live2"><i class="fa-solid fa-briefcase-medical"></i></div>
+          <div class="live3"><i class="fa-solid fa-briefcase-medical"></i></div>
+        </div>
+      </div>
+    </div>
 
-
+    <script
+      src="https://kit.fontawesome.com/e4465711a5.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/Utill_mineSwipper.js"></script>
     <script src="js/ModalMineSwipper.js"></script>
     <script src="js/DomMineSwipper.js"></script>
-
   </body>
 </html>
