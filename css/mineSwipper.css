@@ -35,7 +35,7 @@ h1 {
   text-transform: uppercase;
   font-size: 60px;
   margin: 10px 0;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -51,7 +51,7 @@ h2 {
 
 .header {
   font-size: x-large;
-  margin-bottom:15px;
+  margin-bottom: 10px;
 }
 
 .main {
@@ -69,6 +69,9 @@ h2 {
   text-align: center;
   align-items: center;
   width: 800px;
+}
+table{
+  margin-top: 0px;
 }
 
 .cell {
@@ -119,7 +122,7 @@ button {
   background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
   border: none;
   z-index: 1;
-  font-size: 30px;
+font-size: 30px;
   position: flex;
   content: "";
   width: 100%;
@@ -150,8 +153,8 @@ button:active {
   margin: 20px;
 }
 
-.board-size {
-  width: 200px;
+.board-size{
+    width: 200px;
   height: 80px;
   margin: 20px;
 }
@@ -175,8 +178,10 @@ button:active {
 }
 
 .lives {
+  /* border: 2px solid red; */
   font-size: 70px;
   margin-top: 400px;
+  /* position: absolute; */
 }
 
 .right-side {
