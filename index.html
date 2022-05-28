@@ -14,8 +14,8 @@
 
       <div class="center">
         <div class="header">
-          <h1>Mine Swepper Alon kolker</h1>
-          <h2>Alon kolker</h2>
+          <h1>Mine Swepper</h1>
+
           <button class="restart" onclick="restart()">
             😛 <br />
             Restart
@@ -40,17 +40,35 @@
             <tbody class="board"></tbody>
           </table>
         </div>
-        <div  class="popup">👀Game Over👀</div>
+        <div class="popup">👀Game Over👀</div>
         <p class="createdBy">Coffie rights - Alon Kolker Ⓒ</p>
+        <p class="createdBy">Coding Academy - May 22</p>
       </div>
+
       <div class="right-side">
         <div class="lives">
-          <p style="font-size: xx-large">lives:</p>
+          <p style="font-size: 60px; color: #1693a9" ;>lives:</p>
           <div class="live1"><i class="fa-solid fa-briefcase-medical"></i></div>
           <div class="live2"><i class="fa-solid fa-briefcase-medical"></i></div>
           <div class="live3"><i class="fa-solid fa-briefcase-medical"></i></div>
+
+          <div class="hints">
+            <p style="color: #1693a9">Hint's:</p>
+            <span class="hint0" onclick="hints(this)"
+              ><i class="fa-solid fa-circle-question"></i
+            ></span>
+            <span class="hint1" onclick="hints(this)"
+              ><i class="fa-solid fa-circle-question"></i
+            ></span>
+            <span class="hint2" onclick="hints(this)"
+              ><i class="fa-solid fa-circle-question"></i
+            ></span>
+            <p class="createdBy" style="font-size: 20px" ;>Possible after</p>
+            <p class="createdBy" style="font-size: 20px">the first click</p>
+          </div>
         </div>
       </div>
+
     </div>
 
     <script

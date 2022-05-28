@@ -13,13 +13,45 @@ body {
   background-image: linear-gradient(to right, #70e0f5, #ffd194);
 }
 
+.title {
+  font-family: "Cairo";
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
 h1 {
-  font-size: xx-large;
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 60px;
+  margin: 10px 0;
+  margin-bottom: 80px;
+}
+
+h2 {
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 10px 0;
 }
 
 .header {
   font-size: x-large;
-  margin-bottom: 48px;
+  margin-bottom:15px;
 }
 
 .main {
@@ -46,61 +78,114 @@ h1 {
   font-size: 1.5em;
 }
 
+.cell-hiden:hover {
+  /* border-color:#646FD4; */
+  background-color: #646fd4;
+  height: 2px;
+  opacity: 0.3;
+}
+
 .cell-hiden {
-  border: 4px solid rgb(108, 100, 100);
+  border: 2.5px solid rgb(108, 100, 100);
   width: 80px;
   height: 80px;
   text-align: center;
   box-shadow: 2px 2px rgb(59, 57, 57);
+  transition: 1s;
 }
 
-button {
-  font-size: large;
-  border-radius: 12px;
-  width: 150px;
-  border-color: #646FD4;
+.mine-reveald {
+  background-color: rgb(207, 56, 56);
+}
+/* button {
+  font-size: x-large;
+  border-radius: 30px;
+  width: 200px;
+  height: 80px;
+  border-color: '';
   background-color: #DBDFFD;
+} */
+
+/* button:active{
+  transform : scale(95%)
+} */
+/* 
+button:hover{
+  background-color: #F9EBC8;
+} */
+
+button {
+  background-color: #89d8d3;
+  background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+  border: none;
+  z-index: 1;
+  font-size: 30px;
+  position: flex;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+button:hover {
+  color: #fff;
+}
+button:hover:after {
+  top: 0;
+  height: 100%;
+}
+button:active {
+  top: 2px;
 }
 
 .restart {
-  width: 150px;
-  height: 50px;
+  width: 200px;
+  height: 80px;
   margin: 20px;
 }
 
-table {
-  /* border: 2px solid black; */
+.board-size {
+  width: 200px;
+  height: 80px;
+  margin: 20px;
 }
-
-.lives {
-  /* border: 2px solid red; */
-  font-size: 70px;
-  margin-top: 400px;
-}
-
 .timer {
   margin-top: 10px;
 }
 
-
-.popup{
-
+.popup {
   position: absolute;
   border-style: solid;
-  background-color: #F9EBC8;
-  border-color:#FEFBE7;
+  background-color: #f9ebc8;
+  border-color: #fefbe7;
   width: 250px;
   height: 60px;
   border-radius: 12px;
   text-align: center;
-  font-size:xx-large;
+  font-size: xx-large;
   top: 590px;
   opacity: 0.5;
   display: none;
-} 
+}
 
-.undo{
-display: none;
-  background-color: #ffd194;
-  top: 590px;
+.lives {
+  font-size: 70px;
+  margin-top: 400px;
+}
+
+.right-side {
+  width: 400px;
+}
+.hints {
+  display: inline-block;
+  font-size: 60px;
+}
+.createdBy {
+  font-size: xx-large;
 }
